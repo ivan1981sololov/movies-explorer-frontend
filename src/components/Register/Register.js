@@ -20,7 +20,7 @@ function Register() {
             value='Я'
             required
           />
-          <span className='register__error'>Ошибка!</span>
+          <span className='register__error'>Ошибка...</span>
         </label>
         <label className='register__label' htmlFor='email'>
           E-mail
