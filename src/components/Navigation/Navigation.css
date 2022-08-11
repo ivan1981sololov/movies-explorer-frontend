@@ -1,7 +1,7 @@
 .navigation {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   justify-content: flex-end;
   top: 0;
   left: 0;
@@ -9,6 +9,10 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: visibility 0.4s, opacity 0.4s linear;
+}
+
+.navigation_active {
+  display: flex;
 }
 
 .navigation__container {
