@@ -145,7 +145,8 @@ function App() {
     auth
       .register(data.email, data.password, data.name)
       .then(() => {
-        navigate('/signin', { replace: true })
+        setLoggedIn(true)
+        navigate('/movies', { replace: true })
       })
       .catch((err) => {
         setErrorData(err)
